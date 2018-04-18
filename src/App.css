@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  display: flex;
+  align-items: center;
+  /* float: right; */
+  height: 300px;
+  border: solid black 3px;
+
+}
+.App-header {
+  background-color: #222;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+body {
+  background-image: url("./snow.jpg");
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
