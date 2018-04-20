@@ -1,5 +1,5 @@
 .card {
-    border: solid black 2px;
+    /* border: solid black 2px; */
     font-size: 14px;
     color:black;
 }
@@ -8,7 +8,9 @@
     font-size: 25px;
 }
 
-.CardLink {
+/* .CardLink {
     color:wheat;
     
-}
+} */
+
+

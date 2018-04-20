@@ -3,12 +3,11 @@
 }
 
 .App-logo {
-  display: flex;
-  align-items: center;
-  /* float: right; */
-  height: 300px;
-  border: solid black 3px;
-
+  /* display: flex;
+  justify-content: center; */
+float: center;
+  height: 160px;
+  
 }
 .App-header {
   background-color: #222;
@@ -35,4 +34,32 @@ body {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.links {
+  /* border: solid black 3px;
+  display: flex;
+  align-items: center; */
+  font-size: 16px;
+
+  
+}
+
+.snow {
+  background-image:
+          url(https://image.ibb.co/k0aqx6/snow.png), 
+          url(https://image.ibb.co/eCahc6/snow1.png), 
+          url(https://image.ibb.co/bOboH6/snow2.png);
+  width: 100% !important;
+  height:100% !important;
+  position: absoulute;
+  top: 0;
+  left: 0;
+  z-index:1;
+  animation: snow 10s linear infinite;
+
+}
+@keyframes snow {
+   from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+   to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
 }
