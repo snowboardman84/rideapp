@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import './cards.css';
 import '../App.css';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, CardLink
+    Card, CardText, CardBody,
+    CardTitle, CardLink
 } from 'reactstrap';
 
 export default class Bridger extends Component {
@@ -20,7 +19,6 @@ export default class Bridger extends Component {
                     humidity: 'loading..',
                     temp_min: 'loading..',
                     temp_max: 'loading..',
-                    pressure: 'loading..',
                 },
                 wind: {
                     speed: 'loading..',
@@ -101,7 +99,7 @@ export default class Bridger extends Component {
                         <CardText>Your weather for Bridger Bowl for today is {this.state.data.weather[0].description}. <br />
                             Barometric Pressure: {this.state.data.main.pressure} <br />
                             Current Tempature: {this.state.data.main.temp} °F<br />
-                            Cloud Cover: {this.state.data.clouds.all}% <br /> 
+                            Cloud Cover: {this.state.data.clouds.all}% <br />
                             Humidity: {this.state.data.main.humidity}% <br />
                             Max Temp: {this.state.data.main.temp_max} °F <br />
                             Min Temp: {this.state.data.main.temp_min} °F <br />

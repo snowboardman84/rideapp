@@ -4,8 +4,8 @@ import axios from 'axios';
 import './cards.css';
 import '../App.css';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, CardLink
+    Card, CardText, CardBody,
+    CardTitle, CardLink
 } from 'reactstrap';
 
 export default class Tarhgee extends Component {
@@ -19,7 +19,6 @@ export default class Tarhgee extends Component {
                     humidity: 'loading..',
                     temp_min: 'loading..',
                     temp_max: 'loading..',
-                    pressure: 'loading..',
                 },
                 wind: {
                     speed: 'loading..',

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import './cards.css';
 import '../App.css';
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, CardLink
+    Card, CardText, CardBody,
+    CardTitle,CardLink
 } from 'reactstrap';
 
 
@@ -21,7 +20,6 @@ export default class RedLodge extends Component {
                     humidity: 'loading..',
                     temp_min: 'loading..',
                     temp_max: 'loading..',
-                    pressure: 'loading..',
                 },
                 wind: {
                     speed: 'loading..',
